@@ -1,0 +1,13 @@
+[console_scripts]
+box_draw = moveit.box_draw:main
+box_send_goal = moveit.box_send_goal:main
+check_box_color = moveit.check_box_color:main
+check_box_service = moveit.check_box_service:main
+check_box_service_beta = moveit.check_box_service_beta:main
+pub_compress_image = moveit.pub_compress_image:main
+send_box_position = moveit.send_box_position:main
+sub_compress_image = moveit.sub_compress_image:main
+sub_img = moveit.sub_img:main
+turtlebot3_box_pick_and_place = moveit.turtlebot3_box_pick_and_place:main
+turtlebot3_box_pick_and_place_beta = moveit.turtlebot3_box_pick_and_place_beta:main
+turtlebot3_manipulation_xyz_test = moveit.turtlebot3_manipulation_xyz_test:main

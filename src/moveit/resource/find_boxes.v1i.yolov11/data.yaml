@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['blue_box', 'purple_box', 'red_box']
+
+roboflow:
+  workspace: fullfilemt
+  project: find_boxes
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/fullfilemt/find_boxes/dataset/1

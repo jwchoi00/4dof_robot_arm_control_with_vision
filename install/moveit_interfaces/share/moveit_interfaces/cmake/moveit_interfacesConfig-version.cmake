@@ -1,0 +1,1 @@
+/home/g1/ff_ws/build/moveit_interfaces/ament_cmake_core/moveit_interfacesConfig-version.cmake

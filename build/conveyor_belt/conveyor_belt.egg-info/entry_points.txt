@@ -1,0 +1,4 @@
+[console_scripts]
+command_pub = conveyor_belt.command_pub:main
+conveyor_gui = conveyor_belt.conveyor_gui:main
+publish_to_arduino = conveyor_belt.publish_to_arduino:main

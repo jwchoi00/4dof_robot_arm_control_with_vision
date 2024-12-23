@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from moveit_interfaces/msg/Detection.msg
+// generated code does not contain a copyright notice
+
+
+module moveit_interfaces {
+  module msg {
+    struct Detection {
+      float x1;
+
+      float y1;
+
+      float x2;
+
+      float y2;
+
+      float center_x;
+
+      float center_y;
+
+      float confidence;
+
+      int32 class_id;
+    };
+  };
+};

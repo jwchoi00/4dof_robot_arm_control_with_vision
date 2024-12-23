@@ -1,0 +1,10 @@
+{
+  "package_name": "moveit_interfaces",
+  "non_idl_tuples": [
+    "/home/g1/ff_ws/src/moveit_interfaces:msg/MultiBoxPosition.msg",
+    "/home/g1/ff_ws/src/moveit_interfaces:msg/Detection.msg",
+    "/home/g1/ff_ws/src/moveit_interfaces:msg/DetectionArray.msg",
+    "/home/g1/ff_ws/src/moveit_interfaces:srv/BoxPosition.srv",
+    "/home/g1/ff_ws/src/moveit_interfaces:action/Conveyor.action"
+  ]
+}

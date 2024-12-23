@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing conveyor_belt.egg-info/PKG-INFO
+writing dependency_links to conveyor_belt.egg-info/dependency_links.txt
+writing entry points to conveyor_belt.egg-info/entry_points.txt
+writing requirements to conveyor_belt.egg-info/requires.txt
+writing top-level names to conveyor_belt.egg-info/top_level.txt
+reading manifest file 'conveyor_belt.egg-info/SOURCES.txt'
+writing manifest file 'conveyor_belt.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/g1/ff_ws/install/conveyor_belt/lib/python3.10/site-packages/conveyor-belt.egg-link (link to .)
+Installing command_pub script to /home/g1/ff_ws/install/conveyor_belt/lib/conveyor_belt
+Installing conveyor_gui script to /home/g1/ff_ws/install/conveyor_belt/lib/conveyor_belt
+Installing publish_to_arduino script to /home/g1/ff_ws/install/conveyor_belt/lib/conveyor_belt
+
+Installed /home/g1/ff_ws/build/conveyor_belt
+running symlink_data

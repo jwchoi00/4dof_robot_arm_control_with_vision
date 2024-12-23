@@ -1,0 +1,26 @@
+[0.589s] Invoking command in '/home/g1/ff_ws/build/moveit': PYTHONPATH=/home/g1/ff_ws/build/moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/moveit/build --no-deps symlink_data
+[0.789s] running develop
+[0.939s] running egg_info
+[0.962s] writing moveit.egg-info/PKG-INFO
+[0.963s] writing dependency_links to moveit.egg-info/dependency_links.txt
+[0.963s] writing entry points to moveit.egg-info/entry_points.txt
+[0.963s] writing requirements to moveit.egg-info/requires.txt
+[0.963s] writing top-level names to moveit.egg-info/top_level.txt
+[0.986s] reading manifest file 'moveit.egg-info/SOURCES.txt'
+[0.987s] writing manifest file 'moveit.egg-info/SOURCES.txt'
+[0.998s] running build_ext
+[0.998s] Creating /home/g1/ff_ws/install/moveit/lib/python3.10/site-packages/moveit.egg-link (link to .)
+[0.999s] Installing box_system_action_client script to /home/g1/ff_ws/install/moveit/lib/moveit
+[0.999s] Installing check_box_color script to /home/g1/ff_ws/install/moveit/lib/moveit
+[0.999s] Installing check_box_service script to /home/g1/ff_ws/install/moveit/lib/moveit
+[0.999s] Installing check_box_service_ver2 script to /home/g1/ff_ws/install/moveit/lib/moveit
+[0.999s] Installing pub_compress_image script to /home/g1/ff_ws/install/moveit/lib/moveit
+[0.999s] Installing send_box_position script to /home/g1/ff_ws/install/moveit/lib/moveit
+[1.000s] Installing sub_compress_image script to /home/g1/ff_ws/install/moveit/lib/moveit
+[1.000s] Installing sub_img script to /home/g1/ff_ws/install/moveit/lib/moveit
+[1.000s] Installing turtlebot3_box_pick_and_place script to /home/g1/ff_ws/install/moveit/lib/moveit
+[1.000s] Installing turtlebot3_manipulation_xyz_test script to /home/g1/ff_ws/install/moveit/lib/moveit
+[1.000s] 
+[1.000s] Installed /home/g1/ff_ws/build/moveit
+[1.000s] running symlink_data
+[1.035s] Invoked command in '/home/g1/ff_ws/build/moveit' returned '0': PYTHONPATH=/home/g1/ff_ws/build/moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/moveit/build --no-deps symlink_data

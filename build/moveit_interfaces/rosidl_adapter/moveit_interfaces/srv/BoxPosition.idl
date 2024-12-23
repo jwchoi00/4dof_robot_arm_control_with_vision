@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from moveit_interfaces/srv/BoxPosition.srv
+// generated code does not contain a copyright notice
+
+
+module moveit_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "BoxPosition.srv")
+    struct BoxPosition_Request {
+      @verbatim (language="comment", text=
+        "내 로봇 x 포지션")
+      double x;
+
+      @verbatim (language="comment", text=
+        "내 로봇 y 포지션")
+      double y;
+
+      double z;
+
+      @verbatim (language="comment", text=
+        "원하는 박스 색깔")
+      int32 target_color;
+    };
+    struct BoxPosition_Response {
+      boolean is_within_range;
+
+      @verbatim (language="comment", text=
+        "내 로봇팔이 가야할 X좌표")
+      double goal_x;
+
+      @verbatim (language="comment", text=
+        "내 로봇팔이 가야할 Y좌표")
+      double goal_y;
+
+      @verbatim (language="comment", text=
+        "내 로봇팔이 가야할 Y좌표")
+      double goal_z;
+    };
+  };
+};

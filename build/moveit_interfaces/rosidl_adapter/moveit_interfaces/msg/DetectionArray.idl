@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from moveit_interfaces/msg/DetectionArray.msg
+// generated code does not contain a copyright notice
+
+#include "moveit_interfaces/msg/Detection.idl"
+
+module moveit_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "DetectionArray.msg")
+    struct DetectionArray {
+      sequence<moveit_interfaces::msg::Detection> detections;
+    };
+  };
+};

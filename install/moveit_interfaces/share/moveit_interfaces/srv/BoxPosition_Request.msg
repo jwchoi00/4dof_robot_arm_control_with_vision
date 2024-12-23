@@ -1,0 +1,1 @@
+/home/g1/ff_ws/build/moveit_interfaces/rosidl_cmake/srv/BoxPosition_Request.msg

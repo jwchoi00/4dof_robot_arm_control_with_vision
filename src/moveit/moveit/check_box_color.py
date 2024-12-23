@@ -11,14 +11,14 @@ import json
 class CompressedImageSubscriber(Node):
     def __init__(self):
         super().__init__('compressed_image_subscriber')
-        # Load the YOLO model once during initialization
+        # 사전에 생성한 YOLO모델을 불러오기
         self.model = YOLO("/home/g1/ff_ws/src/moveit/resource/best_ver2.pt")
 
-        # Camera matrix (K) and distortion coefficients (d)
+        # Camera 왜곡 보정 파라메터
         self.K = np.array([[1537.87246, 0, 656.024384], [0, 1570.34693, 618.027499], [0, 0, 1]])
         self.d = np.array([0.156609014, -0.487498585, 0.0537193345, 0.00294416872, 3.06628289])
 
-        # Subscription to compressed image topic
+        # 이미지 받아오기
         self.subscription = self.create_subscription(
             CompressedImage,
             'compressed_image',
@@ -26,55 +26,48 @@ class CompressedImageSubscriber(Node):
             10
         )
 
-        # Publisher for detection results
+        # yolo 결과값 전송
         self.detection_publisher = self.create_publisher(DetectionArray, 'detection_results', 10)
-        self.subscription  # prevent unused variable warning
 
     def image_callback(self, msg):
-        # Convert the byte array to numpy array
+        # numpy array로 변경
         np_arr = np.frombuffer(msg.data, np.uint8)
-        # Decode the image
+        # 이미지 풀기
         frame = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
 
         if frame is not None:
-            self.get_logger().info(f"Received frame of size: {frame.shape}")  # Check the image shape
-            # Undistort the image using camera matrix and distortion coefficients
+            self.get_logger().info(f"Received frame of size: {frame.shape}")
+            # 카메라 왜곡 보정 풀고 끝트머리 제거
             h, w = frame.shape[:2]
             new_K, roi = cv2.getOptimalNewCameraMatrix(self.K, self.d, (w, h), 1, (w, h))
             frame = cv2.undistort(frame, self.K, self.d, None, new_K)
             x, y, w, h = roi
             frame = frame[y:y+h, x:x+w]
-            # Resize the image for YOLO
-            #frame_resized = cv2.resize(frame, (640, 480))
-            # Perform object detection
-            results = self.model(frame, conf=0.5)  # Confidence threshold
-            detection_data = []  # List to store detections as dictionaries
+            results = self.model(frame, conf=0.5)  # 정확도 0.5 이상만
+            detection_data = []
 
-            # Check if any objects were detected
+            # 오브젝트 체크
             for result in results:
                 if result.boxes is not None and len(result.boxes) > 0:
                     for box in result.boxes:
-                        # Extract coordinates, confidence, and class ID
-                        x1, y1, x2, y2 = box.xyxy[0].tolist()  # Convert to list
-                        center_x = ((x1 + x2) / 2) - (w/2)
+                        x1, y1, x2, y2 = box.xyxy[0].tolist()  # box 좌표 넣기
+                        center_x = ((x1 + x2) / 2) - (w/2) # 카메라 중심 픽셀 부터 박스 중심 좌표 계산
                         center_y = ((y1 + y2) / 2) - (h/2)
-                        confidence = box.conf[0].item()  # Extract scalar value
-                        class_id = int(box.cls[0].item())  # Convert to integer
-
-                        # Add detection to the list as a dictionary
+                        confidence = box.conf[0].item()  # 정확도
+                        class_id = int(box.cls[0].item())  # class id
                         detection_data.append({
                             'x1': x1, 'y1': y1, 'x2': x2, 'y2': y2, 'center_x': center_x, 'center_y': center_y,
                             'confidence': confidence, 'class_id': class_id
                         })
 
-                        # Draw bounding box and label
+                        # 박스 그리기
                         cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
                         label = f"Class: {class_id}, Conf: {confidence:.2f}"
                         cv2.putText(frame, label, (int(x1), int(y1) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
                 else:
                     self.get_logger().info("No detections in the current frame.")
 
-            # Publish detection results as a DetectionArray
+            # 탐지된 객체 정보 보내기
             if detection_data:
                 detection_array = DetectionArray()
                 for data in detection_data:

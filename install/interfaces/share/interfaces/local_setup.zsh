@@ -1,0 +1,1 @@
+/home/g1/ff_ws/build/interfaces/ament_cmake_environment_hooks/local_setup.zsh

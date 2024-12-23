@@ -1,0 +1,447 @@
+[0.076s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.076s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x75f239bcfbb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75f239bcf610>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75f239bcf610>>, mixin_verb=('build',))
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.098s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.098s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/g1/ff_ws'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.098s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ignore_ament_install'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['colcon_pkg']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'colcon_pkg'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['colcon_meta']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'colcon_meta'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['ros']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ros'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['cmake', 'python']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'cmake'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'python'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['python_setup_py']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'python_setup_py'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['ignore', 'ignore_ament_install']
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ignore'
+[0.111s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/train/weights) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/get_img) by extension 'ros'
+[0.114s] DEBUG:colcon.colcon_core.package_identification:Package 'src/get_img' with type 'ros.ament_python' and name 'get_img'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extensions ['ignore', 'ignore_ament_install']
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extension 'ignore'
+[0.114s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/gui) by extension 'ros'
+[0.115s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gui' with type 'ros.ament_python' and name 'gui'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ros'
+[0.115s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit) by extension 'ros'
+[0.116s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit' with type 'ros.ament_python' and name 'moveit'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/moveit_interfaces) by extension 'ros'
+[0.116s] DEBUG:colcon.colcon_core.package_identification:Package 'src/moveit_interfaces' with type 'ros.ament_cmake' and name 'moveit_interfaces'
+[0.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.116s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.125s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.125s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.125s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/g1/ff_ws/install/moveit_interfaces' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.125s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/g1/ff_ws/install/moveit' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.126s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/g1/ff_ws/install/conveyor_belt' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.126s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/g1/ff_ws/install/moveit_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.126s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/g1/ff_ws/install
+[0.127s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 310 installed packages in /opt/ros/humble
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.154s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'cmake_args' from command line to 'None'
+[0.154s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'cmake_target' from command line to 'None'
+[0.154s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.154s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'cmake_clean_cache' from command line to 'False'
+[0.154s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'cmake_clean_first' from command line to 'False'
+[0.154s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'cmake_force_configure' from command line to 'False'
+[0.154s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'ament_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'catkin_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'get_img' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.155s] DEBUG:colcon.colcon_core.verb:Building package 'get_img' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/ff_ws/build/get_img', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/ff_ws/install/get_img', 'merge_install': False, 'path': '/home/g1/ff_ws/src/get_img', 'symlink_install': True, 'test_result_base': None}
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'cmake_target' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'cmake_clean_cache' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'cmake_clean_first' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'cmake_force_configure' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'ament_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'catkin_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'gui' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.155s] DEBUG:colcon.colcon_core.verb:Building package 'gui' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/ff_ws/build/gui', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/ff_ws/install/gui', 'merge_install': False, 'path': '/home/g1/ff_ws/src/gui', 'symlink_install': True, 'test_result_base': None}
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.155s] DEBUG:colcon.colcon_core.verb:Building package 'interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/ff_ws/build/interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/ff_ws/install/interfaces', 'merge_install': False, 'path': '/home/g1/ff_ws/src/interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'cmake_target' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'cmake_clean_first' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'cmake_force_configure' from command line to 'False'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'ament_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.155s] DEBUG:colcon.colcon_core.verb:Building package 'moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/ff_ws/build/moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/ff_ws/install/moveit', 'merge_install': False, 'path': '/home/g1/ff_ws/src/moveit', 'symlink_install': True, 'test_result_base': None}
+[0.155s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.156s] Level 5:colcon.colcon_core.verb:set package 'moveit_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.156s] DEBUG:colcon.colcon_core.verb:Building package 'moveit_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/g1/ff_ws/build/moveit_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/g1/ff_ws/install/moveit_interfaces', 'merge_install': False, 'path': '/home/g1/ff_ws/src/moveit_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.156s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.156s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.157s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g1/ff_ws/src/get_img' with build type 'ament_python'
+[0.157s] Level 1:colcon.colcon_core.shell:create_environment_hook('get_img', 'ament_prefix_path')
+[0.158s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/get_img/share/get_img/hook/ament_prefix_path.ps1'
+[0.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/get_img/share/get_img/hook/ament_prefix_path.dsv'
+[0.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/get_img/share/get_img/hook/ament_prefix_path.sh'
+[0.159s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.159s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.161s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g1/ff_ws/src/gui' with build type 'ament_python'
+[0.161s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui', 'ament_prefix_path')
+[0.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/gui/share/gui/hook/ament_prefix_path.ps1'
+[0.162s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/gui/share/gui/hook/ament_prefix_path.dsv'
+[0.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/gui/share/gui/hook/ament_prefix_path.sh'
+[0.162s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.162s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.164s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g1/ff_ws/src/interfaces' with build type 'ament_cmake'
+[0.164s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g1/ff_ws/src/interfaces'
+[0.164s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.164s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.166s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/g1/ff_ws/src/moveit' with build type 'ament_python'
+[0.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit', 'ament_prefix_path')
+[0.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit/share/moveit/hook/ament_prefix_path.ps1'
+[0.166s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/moveit/share/moveit/hook/ament_prefix_path.dsv'
+[0.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit/share/moveit/hook/ament_prefix_path.sh'
+[0.167s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.168s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/g1/ff_ws/src/moveit_interfaces' with build type 'ament_cmake'
+[0.168s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/g1/ff_ws/src/moveit_interfaces'
+[0.169s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.169s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.288s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g1/ff_ws/src/get_img'
+[0.288s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.406s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g1/ff_ws/src/gui'
+[0.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.407s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake /home/g1/ff_ws/src/interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/ff_ws/install/interfaces
+[0.534s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/g1/ff_ws/src/moveit'
+[0.534s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.534s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/moveit_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake /home/g1/ff_ws/src/moveit_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/ff_ws/install/moveit_interfaces
+[0.874s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/get_img': PYTHONPATH=/home/g1/ff_ws/build/get_img/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/get_img/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/get_img/build --no-deps symlink_data
+[0.876s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/gui': PYTHONPATH=/home/g1/ff_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/gui/build --no-deps symlink_data
+[0.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/moveit': PYTHONPATH=/home/g1/ff_ws/build/moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/moveit/build --no-deps symlink_data
+[1.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit', 'pythonpath_develop')
+[1.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/build/moveit/share/moveit/hook/pythonpath_develop.ps1'
+[1.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/moveit' returned '0': PYTHONPATH=/home/g1/ff_ws/build/moveit/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/moveit/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/moveit/build --no-deps symlink_data
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/build/moveit/share/moveit/hook/pythonpath_develop.dsv'
+[1.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/build/moveit/share/moveit/hook/pythonpath_develop.sh'
+[1.389s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit' for CMake module files
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit' for CMake config files
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit/lib'
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit/bin'
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit/lib/pkgconfig/moveit.pc'
+[1.390s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit/lib/python3.10/site-packages'
+[1.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit', 'pythonpath')
+[1.391s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit/share/moveit/hook/pythonpath.ps1'
+[1.391s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/moveit/share/moveit/hook/pythonpath.dsv'
+[1.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit/share/moveit/hook/pythonpath.sh'
+[1.392s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit/bin'
+[1.392s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit)
+[1.392s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit/share/moveit/package.ps1'
+[1.393s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/ff_ws/install/moveit/share/moveit/package.dsv'
+[1.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit/share/moveit/package.sh'
+[1.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit/share/moveit/package.bash'
+[1.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit/share/moveit/package.zsh'
+[1.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/ff_ws/install/moveit/share/colcon-core/packages/moveit)
+[1.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('get_img', 'pythonpath_develop')
+[1.407s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/build/get_img/share/get_img/hook/pythonpath_develop.ps1'
+[1.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/get_img' returned '0': PYTHONPATH=/home/g1/ff_ws/build/get_img/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/get_img/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/get_img/build --no-deps symlink_data
+[1.408s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/build/get_img/share/get_img/hook/pythonpath_develop.dsv'
+[1.408s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/build/get_img/share/get_img/hook/pythonpath_develop.sh'
+[1.409s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/get_img' for CMake module files
+[1.409s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/get_img' for CMake config files
+[1.409s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/get_img/lib'
+[1.409s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/get_img/bin'
+[1.409s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/get_img/lib/pkgconfig/get_img.pc'
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/get_img/lib/python3.10/site-packages'
+[1.410s] Level 1:colcon.colcon_core.shell:create_environment_hook('get_img', 'pythonpath')
+[1.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/get_img/share/get_img/hook/pythonpath.ps1'
+[1.410s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/get_img/share/get_img/hook/pythonpath.dsv'
+[1.410s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/get_img/share/get_img/hook/pythonpath.sh'
+[1.410s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/get_img/bin'
+[1.410s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(get_img)
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/get_img/share/get_img/package.ps1'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/ff_ws/install/get_img/share/get_img/package.dsv'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/get_img/share/get_img/package.sh'
+[1.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/get_img/share/get_img/package.bash'
+[1.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/get_img/share/get_img/package.zsh'
+[1.412s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/ff_ws/install/get_img/share/colcon-core/packages/get_img)
+[1.412s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui', 'pythonpath_develop')
+[1.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/build/gui/share/gui/hook/pythonpath_develop.ps1'
+[1.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/gui' returned '0': PYTHONPATH=/home/g1/ff_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/gui/build --no-deps symlink_data
+[1.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/build/gui/share/gui/hook/pythonpath_develop.dsv'
+[1.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/build/gui/share/gui/hook/pythonpath_develop.sh'
+[1.414s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/gui' for CMake module files
+[1.414s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/gui' for CMake config files
+[1.414s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/gui/lib'
+[1.414s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/gui/bin'
+[1.414s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/gui/lib/pkgconfig/gui.pc'
+[1.414s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/gui/lib/python3.10/site-packages'
+[1.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('gui', 'pythonpath')
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/gui/share/gui/hook/pythonpath.ps1'
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/gui/share/gui/hook/pythonpath.dsv'
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/gui/share/gui/hook/pythonpath.sh'
+[1.415s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/gui/bin'
+[1.415s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gui)
+[1.415s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/gui/share/gui/package.ps1'
+[1.416s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/ff_ws/install/gui/share/gui/package.dsv'
+[1.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/gui/share/gui/package.sh'
+[1.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/gui/share/gui/package.bash'
+[1.416s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/gui/share/gui/package.zsh'
+[1.417s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/ff_ws/install/gui/share/colcon-core/packages/gui)
+[1.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake /home/g1/ff_ws/src/interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/ff_ws/install/interfaces
+[1.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --build /home/g1/ff_ws/build/interfaces -- -j16 -l16
+[1.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/moveit_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake /home/g1/ff_ws/src/moveit_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/ff_ws/install/moveit_interfaces
+[1.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/moveit_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --build /home/g1/ff_ws/build/moveit_interfaces -- -j16 -l16
+[4.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --build /home/g1/ff_ws/build/interfaces -- -j16 -l16
+[4.340s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --install /home/g1/ff_ws/build/interfaces
+[4.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/moveit_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --build /home/g1/ff_ws/build/moveit_interfaces -- -j16 -l16
+[4.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/g1/ff_ws/build/moveit_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --install /home/g1/ff_ws/build/moveit_interfaces
+[4.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[4.910s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces' for CMake module files
+[4.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --install /home/g1/ff_ws/build/interfaces
+[4.911s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces' for CMake config files
+[4.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[4.911s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[4.911s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[4.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[4.912s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/lib'
+[4.912s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[4.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[4.912s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[4.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/bin'
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/lib/pkgconfig/interfaces.pc'
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/lib/python3.10/site-packages'
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/bin'
+[4.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.ps1'
+[4.913s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/ff_ws/install/interfaces/share/interfaces/package.dsv'
+[4.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.sh'
+[4.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.bash'
+[4.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.zsh'
+[4.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/ff_ws/install/interfaces/share/colcon-core/packages/interfaces)
+[4.914s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(interfaces)
+[4.914s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces' for CMake module files
+[4.915s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces' for CMake config files
+[4.915s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'cmake_prefix_path')
+[4.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.ps1'
+[4.915s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.dsv'
+[4.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/cmake_prefix_path.sh'
+[4.916s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/lib'
+[4.916s] Level 1:colcon.colcon_core.shell:create_environment_hook('interfaces', 'ld_library_path_lib')
+[4.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.ps1'
+[4.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.dsv'
+[4.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/interfaces/share/interfaces/hook/ld_library_path_lib.sh'
+[4.916s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/bin'
+[4.916s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/lib/pkgconfig/interfaces.pc'
+[4.917s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/lib/python3.10/site-packages'
+[4.917s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/interfaces/bin'
+[4.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.ps1'
+[4.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/ff_ws/install/interfaces/share/interfaces/package.dsv'
+[4.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.sh'
+[4.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.bash'
+[4.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/interfaces/share/interfaces/package.zsh'
+[4.918s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/ff_ws/install/interfaces/share/colcon-core/packages/interfaces)
+[5.751s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_interfaces)
+[5.752s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/g1/ff_ws/build/moveit_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --install /home/g1/ff_ws/build/moveit_interfaces
+[5.752s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces' for CMake module files
+[5.753s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces' for CMake config files
+[5.754s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_interfaces', 'cmake_prefix_path')
+[5.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/cmake_prefix_path.ps1'
+[5.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/cmake_prefix_path.dsv'
+[5.755s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/cmake_prefix_path.sh'
+[5.755s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/lib'
+[5.756s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_interfaces', 'ld_library_path_lib')
+[5.756s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/ld_library_path_lib.ps1'
+[5.756s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/ld_library_path_lib.dsv'
+[5.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/ld_library_path_lib.sh'
+[5.757s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/bin'
+[5.757s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/lib/pkgconfig/moveit_interfaces.pc'
+[5.757s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/lib/python3.10/site-packages'
+[5.758s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/bin'
+[5.758s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.ps1'
+[5.758s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.dsv'
+[5.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.sh'
+[5.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.bash'
+[5.760s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.zsh'
+[5.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/ff_ws/install/moveit_interfaces/share/colcon-core/packages/moveit_interfaces)
+[5.761s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(moveit_interfaces)
+[5.761s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces' for CMake module files
+[5.762s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces' for CMake config files
+[5.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_interfaces', 'cmake_prefix_path')
+[5.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/cmake_prefix_path.ps1'
+[5.763s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/cmake_prefix_path.dsv'
+[5.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/cmake_prefix_path.sh'
+[5.764s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/lib'
+[5.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('moveit_interfaces', 'ld_library_path_lib')
+[5.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/ld_library_path_lib.ps1'
+[5.765s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/ld_library_path_lib.dsv'
+[5.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/hook/ld_library_path_lib.sh'
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/bin'
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/lib/pkgconfig/moveit_interfaces.pc'
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/lib/python3.10/site-packages'
+[5.766s] Level 1:colcon.colcon_core.environment:checking '/home/g1/ff_ws/install/moveit_interfaces/bin'
+[5.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.ps1'
+[5.767s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.dsv'
+[5.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.sh'
+[5.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.bash'
+[5.769s] INFO:colcon.colcon_core.shell:Creating package script '/home/g1/ff_ws/install/moveit_interfaces/share/moveit_interfaces/package.zsh'
+[5.769s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/g1/ff_ws/install/moveit_interfaces/share/colcon-core/packages/moveit_interfaces)
+[5.769s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.770s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.770s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.770s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.777s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.777s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.777s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.793s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.794s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/ff_ws/install/local_setup.ps1'
+[5.795s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g1/ff_ws/install/_local_setup_util_ps1.py'
+[5.797s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/ff_ws/install/setup.ps1'
+[5.799s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/ff_ws/install/local_setup.sh'
+[5.800s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/g1/ff_ws/install/_local_setup_util_sh.py'
+[5.800s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/ff_ws/install/setup.sh'
+[5.802s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/ff_ws/install/local_setup.bash'
+[5.803s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/ff_ws/install/setup.bash'
+[5.804s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/g1/ff_ws/install/local_setup.zsh'
+[5.805s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/g1/ff_ws/install/setup.zsh'

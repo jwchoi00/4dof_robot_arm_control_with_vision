@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from interfaces/action/Job.action
+// generated code does not contain a copyright notice
+
+
+module interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct Job_Goal {
+      int32 redbox;
+
+      int32 bluebox;
+
+      int32 goal;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct Job_Result {
+      boolean success;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct Job_Feedback {
+      string feedback;
+    };
+  };
+};

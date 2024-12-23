@@ -1,0 +1,12 @@
+# Goal
+int32 redbox
+int32 bluebox
+int32 goal
+
+---
+# Result
+bool success
+
+---
+# Feedback
+string feedback

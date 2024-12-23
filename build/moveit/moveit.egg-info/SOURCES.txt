@@ -19,6 +19,7 @@ moveit/turtlebot3_box_pick_and_place.py
 moveit/turtlebot3_box_pick_and_place_beta.py
 moveit/turtlebot3_manipulation_gripper_test.py
 moveit/turtlebot3_manipulation_xyz_test.py
+moveit/turtlebot3_move.py
 moveit/yolo_imshow_test.py
 moveit/yolo_test.py
 moveit.egg-info/PKG-INFO

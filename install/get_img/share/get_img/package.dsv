@@ -1,0 +1,9 @@
+source;share/get_img/hook/pythonpath.ps1
+source;share/get_img/hook/pythonpath.dsv
+source;share/get_img/hook/pythonpath.sh
+source;share/get_img/hook/ament_prefix_path.ps1
+source;share/get_img/hook/ament_prefix_path.dsv
+source;share/get_img/hook/ament_prefix_path.sh
+source;../../build/get_img/share/get_img/hook/pythonpath_develop.ps1
+source;../../build/get_img/share/get_img/hook/pythonpath_develop.dsv
+source;../../build/get_img/share/get_img/hook/pythonpath_develop.sh

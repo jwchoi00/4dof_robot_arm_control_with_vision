@@ -1,0 +1,26 @@
+[0.715s] Invoking command in '/home/g1/ff_ws/build/gui': PYTHONPATH=/home/g1/ff_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/gui/build --no-deps symlink_data
+[0.831s] /home/g1/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:261: UserWarning: Unknown distribution option: 'tests_require'
+[0.831s]   warnings.warn(msg)
+[0.951s] running develop
+[1.115s] running egg_info
+[1.127s] creating gui.egg-info
+[1.127s] writing gui.egg-info/PKG-INFO
+[1.127s] writing dependency_links to gui.egg-info/dependency_links.txt
+[1.127s] writing entry points to gui.egg-info/entry_points.txt
+[1.127s] writing requirements to gui.egg-info/requires.txt
+[1.127s] writing top-level names to gui.egg-info/top_level.txt
+[1.127s] writing manifest file 'gui.egg-info/SOURCES.txt'
+[1.168s] reading manifest file 'gui.egg-info/SOURCES.txt'
+[1.168s] writing manifest file 'gui.egg-info/SOURCES.txt'
+[1.182s] running build_ext
+[1.182s] Creating /home/g1/ff_ws/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)
+[1.182s] Installing gui script to /home/g1/ff_ws/install/gui/lib/gui
+[1.182s] Installing jobactionserber script to /home/g1/ff_ws/install/gui/lib/gui
+[1.183s] Installing sub_img script to /home/g1/ff_ws/install/gui/lib/gui
+[1.183s] 
+[1.183s] Installed /home/g1/ff_ws/build/gui
+[1.183s] running symlink_data
+[1.183s] creating /home/g1/ff_ws/install/gui/share/ament_index/resource_index/packages
+[1.183s] symbolically linking /home/g1/ff_ws/build/gui/resource/gui -> /home/g1/ff_ws/install/gui/share/ament_index/resource_index/packages
+[1.183s] symbolically linking /home/g1/ff_ws/build/gui/package.xml -> /home/g1/ff_ws/install/gui/share/gui
+[1.252s] Invoked command in '/home/g1/ff_ws/build/gui' returned '0': PYTHONPATH=/home/g1/ff_ws/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/g1/ff_ws/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/g1/ff_ws/build/gui/build --no-deps symlink_data

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: get_img
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: psb
+Maintainer-email: your_email@youremail.com
+License: TODO: License declaration
+Requires-Dist: setuptools

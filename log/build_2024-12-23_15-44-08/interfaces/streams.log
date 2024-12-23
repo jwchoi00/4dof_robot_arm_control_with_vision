@@ -1,0 +1,225 @@
+[0.251s] Invoking command in '/home/g1/ff_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake /home/g1/ff_ws/src/interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/ff_ws/install/interfaces
+[0.373s] -- The C compiler identification is GNU 11.4.0
+[0.373s] -- The CXX compiler identification is GNU 11.4.0
+[0.374s] -- Detecting C compiler ABI info
+[0.390s] -- Detecting C compiler ABI info - done
+[0.394s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.394s] -- Detecting C compile features
+[0.395s] -- Detecting C compile features - done
+[0.396s] -- Detecting CXX compiler ABI info
+[0.457s] -- Detecting CXX compiler ABI info - done
+[0.461s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.461s] -- Detecting CXX compile features
+[0.461s] -- Detecting CXX compile features - done
+[0.463s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.694s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.752s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.777s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.780s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.786s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.816s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.049s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.187s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.356s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.369s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.370s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.386s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.386s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.386s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.386s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.399s] -- Found PythonExtra: .so  
+[1.424s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.430s] -- Configuring done
+[1.453s] -- Generating done
+[1.460s] -- Build files have been written to: /home/g1/ff_ws/build/interfaces
+[1.467s] Invoked command in '/home/g1/ff_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake /home/g1/ff_ws/src/interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/g1/ff_ws/install/interfaces
+[1.469s] Invoking command in '/home/g1/ff_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --build /home/g1/ff_ws/build/interfaces -- -j16 -l16
+[1.503s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.511s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.517s] [  5%] Built target ament_cmake_python_symlink_interfaces
+[1.669s] running egg_info
+[1.680s] creating interfaces.egg-info
+[1.680s] writing interfaces.egg-info/PKG-INFO
+[1.681s] writing dependency_links to interfaces.egg-info/dependency_links.txt
+[1.681s] writing top-level names to interfaces.egg-info/top_level.txt
+[1.681s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[1.719s] reading manifest file 'interfaces.egg-info/SOURCES.txt'
+[1.719s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[1.746s] [  5%] Built target ament_cmake_python_build_interfaces_egg
+[1.881s] [ 10%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/action/detail/conveyor__functions.c.o[0m
+[1.881s] [ 10%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/action/detail/job__functions.c.o[0m
+[1.926s] [ 10%] Built target interfaces__cpp
+[1.935s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.935s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.935s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.970s] [ 20%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_c.so[0m
+[2.001s] [ 20%] Built target interfaces__rosidl_generator_c
+[2.009s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.010s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.010s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.238s] [ 33%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/action/detail/conveyor__type_support.cpp.o[0m
+[2.238s] [ 33%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/action/detail/job__type_support.cpp.o[0m
+[2.262s] [ 38%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/action/conveyor__type_support.cpp.o[0m
+[2.262s] [ 38%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/action/job__type_support.cpp.o[0m
+[2.384s] [ 41%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/action/job__type_support.cpp.o[0m
+[2.386s] [ 43%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/action/conveyor__type_support.cpp.o[0m
+[2.426s] [ 48%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/action/detail/dds_fastrtps/conveyor__type_support.cpp.o[0m
+[2.426s] [ 48%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/action/detail/dds_fastrtps/job__type_support.cpp.o[0m
+[2.435s] [ 51%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so[0m
+[2.498s] [ 53%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/action/detail/conveyor__type_support.c.o[0m
+[2.502s] [ 56%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/action/detail/job__type_support.c.o[0m
+[2.502s] [ 56%] Built target interfaces__rosidl_typesupport_c
+[2.547s] [ 58%] [32m[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so[0m
+[2.556s] [ 64%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/action/detail/job__type_support_c.cpp.o[0m
+[2.556s] [ 64%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/action/detail/conveyor__type_support_c.cpp.o[0m
+[2.576s] [ 64%] Built target interfaces__rosidl_typesupport_introspection_c
+[2.667s] [ 66%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so[0m
+[2.697s] [ 66%] Built target interfaces__rosidl_typesupport_cpp
+[2.749s] [ 69%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.800s] [ 69%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[2.886s] [ 71%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.904s] [ 74%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.958s] [ 74%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[2.984s] [ 74%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[3.007s] [ 74%] Built target interfaces
+[3.029s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.894s] [ 76%] Built target interfaces__py
+[3.909s] [ 79%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/action/_job_s.c.o[0m
+[3.910s] [ 82%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/action/_conveyor_s.c.o[0m
+[3.992s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so[0m
+[4.026s] [ 84%] Built target interfaces__rosidl_generator_py
+[4.043s] [ 92%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.043s] [ 92%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.043s] [ 92%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[4.130s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.131s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.131s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.159s] [100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[4.159s] [100%] Built target interfaces__rosidl_typesupport_c__pyext
+[4.159s] [100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.168s] Invoked command in '/home/g1/ff_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --build /home/g1/ff_ws/build/interfaces -- -j16 -l16
+[4.176s] Invoking command in '/home/g1/ff_ws/build/interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --install /home/g1/ff_ws/build/interfaces
+[4.181s] -- Install configuration: ""
+[4.182s] -- Execute custom install script
+[4.182s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[4.189s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/conveyor.h
+[4.195s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__functions.h
+[4.201s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__struct.h
+[4.207s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__type_support.h
+[4.214s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__functions.h
+[4.219s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__struct.h
+[4.226s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__type_support.h
+[4.234s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/job.h
+[4.240s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.247s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/library_path.sh
+[4.254s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/library_path.dsv
+[4.261s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__rosidl_typesupport_fastrtps_c.h
+[4.269s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__rosidl_typesupport_fastrtps_c.h
+[4.275s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.281s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__rosidl_typesupport_introspection_c.h
+[4.287s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__rosidl_typesupport_introspection_c.h
+[4.292s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.299s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/conveyor.hpp
+[4.306s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__builder.hpp
+[4.313s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__struct.hpp
+[4.321s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__traits.hpp
+[4.326s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__type_support.hpp
+[4.337s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__builder.hpp
+[4.344s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__struct.hpp
+[4.351s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__traits.hpp
+[4.359s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__type_support.hpp
+[4.367s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/job.hpp
+[4.373s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.379s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__rosidl_typesupport_fastrtps_cpp.hpp
+[4.385s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__rosidl_typesupport_fastrtps_cpp.hpp
+[4.392s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.399s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/conveyor__rosidl_typesupport_introspection_cpp.hpp
+[4.405s] -- Symlinking: /home/g1/ff_ws/install/interfaces/include/interfaces/interfaces/action/detail/job__rosidl_typesupport_introspection_cpp.hpp
+[4.412s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/pythonpath.sh
+[4.420s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[4.429s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[4.437s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.443s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.451s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[4.458s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py
+[4.465s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
+[4.472s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.478s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.484s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/__init__.py
+[4.490s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_conveyor.py
+[4.496s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_conveyor_s.c
+[4.502s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_job.py
+[4.508s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_job_s.c
+[4.514s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.519s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.525s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.533s] -- Symlinking: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so
+[4.541s] -- Up-to-date symlink: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.541s] -- Up-to-date symlink: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.541s] -- Up-to-date symlink: /home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.541s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/action/Job.idl
+[4.548s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/action/Conveyor.idl
+[4.555s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/action/Job.action
+[4.561s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/action/Conveyor.action
+[4.569s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[4.576s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[4.585s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[4.594s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[4.602s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/path.sh
+[4.608s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/environment/path.dsv
+[4.614s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/local_setup.bash
+[4.621s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/local_setup.sh
+[4.629s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/local_setup.zsh
+[4.636s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/local_setup.dsv
+[4.641s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/package.dsv
+[4.647s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[4.653s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[4.659s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.665s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.670s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.676s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.681s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.687s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.692s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[4.698s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[4.703s] -- Symlinking: /home/g1/ff_ws/install/interfaces/share/interfaces/package.xml
+[4.709s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[4.709s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""
+[4.710s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[4.710s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[4.710s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[4.710s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""
+[4.710s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[4.710s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""
+[4.710s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.711s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.711s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[4.711s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[4.711s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[4.711s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""
+[4.739s] Listing '/home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...
+[4.739s] Compiling '/home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...
+[4.739s] Listing '/home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action'...
+[4.739s] Compiling '/home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/__init__.py'...
+[4.740s] Compiling '/home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_conveyor.py'...
+[4.740s] Compiling '/home/g1/ff_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/action/_job.py'...
+[4.742s] -- Installing: /home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
+[4.743s] -- Set runtime path of "/home/g1/ff_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.743s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake
+[4.744s] -- Installing: /home/g1/ff_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.746s] Invoked command in '/home/g1/ff_ws/build/interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/g1/ff_ws/install/moveit:/home/g1/ff_ws/install/conveyor_belt:/opt/ros/humble /usr/bin/cmake --install /home/g1/ff_ws/build/interfaces

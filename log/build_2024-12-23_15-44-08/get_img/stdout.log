@@ -1,0 +1,21 @@
+running develop
+running egg_info
+creating get_img.egg-info
+writing get_img.egg-info/PKG-INFO
+writing dependency_links to get_img.egg-info/dependency_links.txt
+writing entry points to get_img.egg-info/entry_points.txt
+writing requirements to get_img.egg-info/requires.txt
+writing top-level names to get_img.egg-info/top_level.txt
+writing manifest file 'get_img.egg-info/SOURCES.txt'
+reading manifest file 'get_img.egg-info/SOURCES.txt'
+writing manifest file 'get_img.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/g1/ff_ws/install/get_img/lib/python3.10/site-packages/get-img.egg-link (link to .)
+Installing pub_img script to /home/g1/ff_ws/install/get_img/lib/get_img
+Installing sub_img script to /home/g1/ff_ws/install/get_img/lib/get_img
+
+Installed /home/g1/ff_ws/build/get_img
+running symlink_data
+creating /home/g1/ff_ws/install/get_img/share/ament_index/resource_index/packages
+symbolically linking /home/g1/ff_ws/build/get_img/resource/get_img -> /home/g1/ff_ws/install/get_img/share/ament_index/resource_index/packages
+symbolically linking /home/g1/ff_ws/build/get_img/package.xml -> /home/g1/ff_ws/install/get_img/share/get_img

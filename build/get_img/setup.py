@@ -1,0 +1,1 @@
+/home/g1/ff_ws/src/get_img/setup.py

@@ -1,0 +1,4 @@
+[console_scripts]
+gui = gui.gui:main
+jobactionserber = gui.jobactionservertest:main
+sub_img = gui.sub_compress_image:main

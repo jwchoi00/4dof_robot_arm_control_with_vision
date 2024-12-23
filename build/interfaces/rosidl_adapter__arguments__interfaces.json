@@ -1,0 +1,7 @@
+{
+  "package_name": "interfaces",
+  "non_idl_tuples": [
+    "/home/g1/ff_ws/src/interfaces:action/Job.action",
+    "/home/g1/ff_ws/src/interfaces:action/Conveyor.action"
+  ]
+}

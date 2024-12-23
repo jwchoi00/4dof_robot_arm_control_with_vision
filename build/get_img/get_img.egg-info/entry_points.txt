@@ -1,0 +1,3 @@
+[console_scripts]
+pub_img = get_img.pub_img:main
+sub_img = get_img.sub_img:main

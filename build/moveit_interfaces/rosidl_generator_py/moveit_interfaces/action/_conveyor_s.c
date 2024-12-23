@@ -68,6 +68,15 @@ bool moveit_interfaces__action__conveyor__goal__convert_from_py(PyObject * _pyms
     ros_message->blue_box_count = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // purple_box_count
+    PyObject * field = PyObject_GetAttrString(_pymsg, "purple_box_count");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->purple_box_count = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -106,6 +115,17 @@ PyObject * moveit_interfaces__action__conveyor__goal__convert_to_py(void * raw_r
     field = PyLong_FromLong(ros_message->blue_box_count);
     {
       int rc = PyObject_SetAttrString(_pymessage, "blue_box_count", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // purple_box_count
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->purple_box_count);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "purple_box_count", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -313,6 +333,15 @@ bool moveit_interfaces__action__conveyor__feedback__convert_from_py(PyObject * _
     ros_message->blue_boxes_moved = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // purple_box_moved
+    PyObject * field = PyObject_GetAttrString(_pymsg, "purple_box_moved");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->purple_box_moved = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -351,6 +380,17 @@ PyObject * moveit_interfaces__action__conveyor__feedback__convert_to_py(void * r
     field = PyLong_FromLong(ros_message->blue_boxes_moved);
     {
       int rc = PyObject_SetAttrString(_pymessage, "blue_boxes_moved", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // purple_box_moved
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->purple_box_moved);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "purple_box_moved", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

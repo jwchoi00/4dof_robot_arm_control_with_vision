@@ -59,6 +59,11 @@ static bool _Conveyor_Goal__cdr_serialize(
     cdr << ros_message->blue_box_count;
   }
 
+  // Field name: purple_box_count
+  {
+    cdr << ros_message->purple_box_count;
+  }
+
   return true;
 }
 
@@ -79,6 +84,11 @@ static bool _Conveyor_Goal__cdr_deserialize(
   // Field name: blue_box_count
   {
     cdr >> ros_message->blue_box_count;
+  }
+
+  // Field name: purple_box_count
+  {
+    cdr >> ros_message->purple_box_count;
   }
 
   return true;
@@ -107,6 +117,12 @@ size_t get_serialized_size_moveit_interfaces__action__Conveyor_Goal(
   // field.name blue_box_count
   {
     size_t item_size = sizeof(ros_message->blue_box_count);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name purple_box_count
+  {
+    size_t item_size = sizeof(ros_message->purple_box_count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -155,6 +171,14 @@ size_t max_serialized_size_moveit_interfaces__action__Conveyor_Goal(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: purple_box_count
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -164,7 +188,7 @@ size_t max_serialized_size_moveit_interfaces__action__Conveyor_Goal(
     using DataType = moveit_interfaces__action__Conveyor_Goal;
     is_plain =
       (
-      offsetof(DataType, blue_box_count) +
+      offsetof(DataType, purple_box_count) +
       last_member_size
       ) == ret_val;
   }
@@ -520,6 +544,11 @@ static bool _Conveyor_Feedback__cdr_serialize(
     cdr << ros_message->blue_boxes_moved;
   }
 
+  // Field name: purple_box_moved
+  {
+    cdr << ros_message->purple_box_moved;
+  }
+
   return true;
 }
 
@@ -540,6 +569,11 @@ static bool _Conveyor_Feedback__cdr_deserialize(
   // Field name: blue_boxes_moved
   {
     cdr >> ros_message->blue_boxes_moved;
+  }
+
+  // Field name: purple_box_moved
+  {
+    cdr >> ros_message->purple_box_moved;
   }
 
   return true;
@@ -568,6 +602,12 @@ size_t get_serialized_size_moveit_interfaces__action__Conveyor_Feedback(
   // field.name blue_boxes_moved
   {
     size_t item_size = sizeof(ros_message->blue_boxes_moved);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name purple_box_moved
+  {
+    size_t item_size = sizeof(ros_message->purple_box_moved);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -616,6 +656,14 @@ size_t max_serialized_size_moveit_interfaces__action__Conveyor_Feedback(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: purple_box_moved
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -625,7 +673,7 @@ size_t max_serialized_size_moveit_interfaces__action__Conveyor_Feedback(
     using DataType = moveit_interfaces__action__Conveyor_Feedback;
     is_plain =
       (
-      offsetof(DataType, blue_boxes_moved) +
+      offsetof(DataType, purple_box_moved) +
       last_member_size
       ) == ret_val;
   }

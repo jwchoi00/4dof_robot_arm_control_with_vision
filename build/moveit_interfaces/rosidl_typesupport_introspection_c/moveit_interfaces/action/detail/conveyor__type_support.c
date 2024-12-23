@@ -31,7 +31,7 @@ void moveit_interfaces__action__Conveyor_Goal__rosidl_typesupport_introspection_
   moveit_interfaces__action__Conveyor_Goal__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember moveit_interfaces__action__Conveyor_Goal__rosidl_typesupport_introspection_c__Conveyor_Goal_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember moveit_interfaces__action__Conveyor_Goal__rosidl_typesupport_introspection_c__Conveyor_Goal_message_member_array[3] = {
   {
     "red_box_count",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -65,13 +65,30 @@ static rosidl_typesupport_introspection_c__MessageMember moveit_interfaces__acti
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "purple_box_count",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(moveit_interfaces__action__Conveyor_Goal, purple_box_count),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers moveit_interfaces__action__Conveyor_Goal__rosidl_typesupport_introspection_c__Conveyor_Goal_message_members = {
   "moveit_interfaces__action",  // message namespace
   "Conveyor_Goal",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(moveit_interfaces__action__Conveyor_Goal),
   moveit_interfaces__action__Conveyor_Goal__rosidl_typesupport_introspection_c__Conveyor_Goal_message_member_array,  // message members
   moveit_interfaces__action__Conveyor_Goal__rosidl_typesupport_introspection_c__Conveyor_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -245,7 +262,7 @@ void moveit_interfaces__action__Conveyor_Feedback__rosidl_typesupport_introspect
   moveit_interfaces__action__Conveyor_Feedback__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember moveit_interfaces__action__Conveyor_Feedback__rosidl_typesupport_introspection_c__Conveyor_Feedback_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember moveit_interfaces__action__Conveyor_Feedback__rosidl_typesupport_introspection_c__Conveyor_Feedback_message_member_array[3] = {
   {
     "red_boxes_moved",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -279,13 +296,30 @@ static rosidl_typesupport_introspection_c__MessageMember moveit_interfaces__acti
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "purple_box_moved",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(moveit_interfaces__action__Conveyor_Feedback, purple_box_moved),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers moveit_interfaces__action__Conveyor_Feedback__rosidl_typesupport_introspection_c__Conveyor_Feedback_message_members = {
   "moveit_interfaces__action",  // message namespace
   "Conveyor_Feedback",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(moveit_interfaces__action__Conveyor_Feedback),
   moveit_interfaces__action__Conveyor_Feedback__rosidl_typesupport_introspection_c__Conveyor_Feedback_message_member_array,  // message members
   moveit_interfaces__action__Conveyor_Feedback__rosidl_typesupport_introspection_c__Conveyor_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)

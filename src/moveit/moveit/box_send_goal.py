@@ -11,7 +11,7 @@ class ConveyorActionClient(Node):
         # Create an Action Client for the Conveyor action
         self._action_client = ActionClient(self, Conveyor, 'conveyor_action')
 
-    def send_goal(self, red_box_count, blue_box_count):
+    def send_goal(self, red_box_count, blue_box_count, purple_box_count):
         # Wait for the action server to be available
         self._action_client.wait_for_server()
         
@@ -19,7 +19,7 @@ class ConveyorActionClient(Node):
         goal_msg = Conveyor.Goal()
         goal_msg.red_box_count = red_box_count
         goal_msg.blue_box_count = blue_box_count
-
+        goal_msg.purple_box_count = purple_box_count
         # Send the goal to the action server
         self._send_goal_future = self._action_client.send_goal_async(
             goal_msg, feedback_callback=self.feedback_callback
@@ -61,9 +61,10 @@ def main():
     # User input for the number of boxes
     red_box_count = int(input('Enter the number of red boxes: '))
     blue_box_count = int(input('Enter the number of blue boxes: '))
+    purple_box_count = int(input("Enter the number of purple boxes: "))
 
     # Send the goal to the server
-    action_client.send_goal(red_box_count, blue_box_count)
+    action_client.send_goal(red_box_count, blue_box_count, purple_box_count)
 
     # Spin the client node
     rclpy.spin(action_client)

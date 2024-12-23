@@ -11,6 +11,8 @@ module moveit_interfaces {
       int32 red_box_count;
 
       int32 blue_box_count;
+
+      int32 purple_box_count;
     };
     @verbatim (language="comment", text=
       "Result")
@@ -25,6 +27,8 @@ module moveit_interfaces {
       int32 red_boxes_moved;
 
       int32 blue_boxes_moved;
+
+      int32 purple_box_moved;
     };
   };
 };

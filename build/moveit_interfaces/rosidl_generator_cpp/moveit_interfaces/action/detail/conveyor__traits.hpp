@@ -36,6 +36,13 @@ inline void to_flow_style_yaml(
   {
     out << "blue_box_count: ";
     rosidl_generator_traits::value_to_yaml(msg.blue_box_count, out);
+    out << ", ";
+  }
+
+  // member: purple_box_count
+  {
+    out << "purple_box_count: ";
+    rosidl_generator_traits::value_to_yaml(msg.purple_box_count, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -61,6 +68,16 @@ inline void to_block_style_yaml(
     }
     out << "blue_box_count: ";
     rosidl_generator_traits::value_to_yaml(msg.blue_box_count, out);
+    out << "\n";
+  }
+
+  // member: purple_box_count
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "purple_box_count: ";
+    rosidl_generator_traits::value_to_yaml(msg.purple_box_count, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -254,6 +271,13 @@ inline void to_flow_style_yaml(
   {
     out << "blue_boxes_moved: ";
     rosidl_generator_traits::value_to_yaml(msg.blue_boxes_moved, out);
+    out << ", ";
+  }
+
+  // member: purple_box_moved
+  {
+    out << "purple_box_moved: ";
+    rosidl_generator_traits::value_to_yaml(msg.purple_box_moved, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -279,6 +303,16 @@ inline void to_block_style_yaml(
     }
     out << "blue_boxes_moved: ";
     rosidl_generator_traits::value_to_yaml(msg.blue_boxes_moved, out);
+    out << "\n";
+  }
+
+  // member: purple_box_moved
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "purple_box_moved: ";
+    rosidl_generator_traits::value_to_yaml(msg.purple_box_moved, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

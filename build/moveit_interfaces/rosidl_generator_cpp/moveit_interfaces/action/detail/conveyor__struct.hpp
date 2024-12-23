@@ -40,6 +40,7 @@ struct Conveyor_Goal_
     {
       this->red_box_count = 0l;
       this->blue_box_count = 0l;
+      this->purple_box_count = 0l;
     }
   }
 
@@ -51,6 +52,7 @@ struct Conveyor_Goal_
     {
       this->red_box_count = 0l;
       this->blue_box_count = 0l;
+      this->purple_box_count = 0l;
     }
   }
 
@@ -61,6 +63,9 @@ struct Conveyor_Goal_
   using _blue_box_count_type =
     int32_t;
   _blue_box_count_type blue_box_count;
+  using _purple_box_count_type =
+    int32_t;
+  _purple_box_count_type purple_box_count;
 
   // setters for named parameter idiom
   Type & set__red_box_count(
@@ -73,6 +78,12 @@ struct Conveyor_Goal_
     const int32_t & _arg)
   {
     this->blue_box_count = _arg;
+    return *this;
+  }
+  Type & set__purple_box_count(
+    const int32_t & _arg)
+  {
+    this->purple_box_count = _arg;
     return *this;
   }
 
@@ -122,6 +133,9 @@ struct Conveyor_Goal_
       return false;
     }
     if (this->blue_box_count != other.blue_box_count) {
+      return false;
+    }
+    if (this->purple_box_count != other.purple_box_count) {
       return false;
     }
     return true;
@@ -296,6 +310,7 @@ struct Conveyor_Feedback_
     {
       this->red_boxes_moved = 0l;
       this->blue_boxes_moved = 0l;
+      this->purple_box_moved = 0l;
     }
   }
 
@@ -307,6 +322,7 @@ struct Conveyor_Feedback_
     {
       this->red_boxes_moved = 0l;
       this->blue_boxes_moved = 0l;
+      this->purple_box_moved = 0l;
     }
   }
 
@@ -317,6 +333,9 @@ struct Conveyor_Feedback_
   using _blue_boxes_moved_type =
     int32_t;
   _blue_boxes_moved_type blue_boxes_moved;
+  using _purple_box_moved_type =
+    int32_t;
+  _purple_box_moved_type purple_box_moved;
 
   // setters for named parameter idiom
   Type & set__red_boxes_moved(
@@ -329,6 +348,12 @@ struct Conveyor_Feedback_
     const int32_t & _arg)
   {
     this->blue_boxes_moved = _arg;
+    return *this;
+  }
+  Type & set__purple_box_moved(
+    const int32_t & _arg)
+  {
+    this->purple_box_moved = _arg;
     return *this;
   }
 
@@ -378,6 +403,9 @@ struct Conveyor_Feedback_
       return false;
     }
     if (this->blue_boxes_moved != other.blue_boxes_moved) {
+      return false;
+    }
+    if (this->purple_box_moved != other.purple_box_moved) {
       return false;
     }
     return true;

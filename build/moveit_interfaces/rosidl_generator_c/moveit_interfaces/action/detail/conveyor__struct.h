@@ -22,6 +22,7 @@ typedef struct moveit_interfaces__action__Conveyor_Goal
 {
   int32_t red_box_count;
   int32_t blue_box_count;
+  int32_t purple_box_count;
 } moveit_interfaces__action__Conveyor_Goal;
 
 // Struct for a sequence of moveit_interfaces__action__Conveyor_Goal.
@@ -66,6 +67,7 @@ typedef struct moveit_interfaces__action__Conveyor_Feedback
 {
   int32_t red_boxes_moved;
   int32_t blue_boxes_moved;
+  int32_t purple_box_moved;
 } moveit_interfaces__action__Conveyor_Feedback;
 
 // Struct for a sequence of moveit_interfaces__action__Conveyor_Feedback.

@@ -21,16 +21,32 @@ namespace action
 namespace builder
 {
 
+class Init_Conveyor_Goal_purple_box_count
+{
+public:
+  explicit Init_Conveyor_Goal_purple_box_count(::moveit_interfaces::action::Conveyor_Goal & msg)
+  : msg_(msg)
+  {}
+  ::moveit_interfaces::action::Conveyor_Goal purple_box_count(::moveit_interfaces::action::Conveyor_Goal::_purple_box_count_type arg)
+  {
+    msg_.purple_box_count = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::moveit_interfaces::action::Conveyor_Goal msg_;
+};
+
 class Init_Conveyor_Goal_blue_box_count
 {
 public:
   explicit Init_Conveyor_Goal_blue_box_count(::moveit_interfaces::action::Conveyor_Goal & msg)
   : msg_(msg)
   {}
-  ::moveit_interfaces::action::Conveyor_Goal blue_box_count(::moveit_interfaces::action::Conveyor_Goal::_blue_box_count_type arg)
+  Init_Conveyor_Goal_purple_box_count blue_box_count(::moveit_interfaces::action::Conveyor_Goal::_blue_box_count_type arg)
   {
     msg_.blue_box_count = std::move(arg);
-    return std::move(msg_);
+    return Init_Conveyor_Goal_purple_box_count(msg_);
   }
 
 private:
@@ -137,16 +153,32 @@ namespace action
 namespace builder
 {
 
+class Init_Conveyor_Feedback_purple_box_moved
+{
+public:
+  explicit Init_Conveyor_Feedback_purple_box_moved(::moveit_interfaces::action::Conveyor_Feedback & msg)
+  : msg_(msg)
+  {}
+  ::moveit_interfaces::action::Conveyor_Feedback purple_box_moved(::moveit_interfaces::action::Conveyor_Feedback::_purple_box_moved_type arg)
+  {
+    msg_.purple_box_moved = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::moveit_interfaces::action::Conveyor_Feedback msg_;
+};
+
 class Init_Conveyor_Feedback_blue_boxes_moved
 {
 public:
   explicit Init_Conveyor_Feedback_blue_boxes_moved(::moveit_interfaces::action::Conveyor_Feedback & msg)
   : msg_(msg)
   {}
-  ::moveit_interfaces::action::Conveyor_Feedback blue_boxes_moved(::moveit_interfaces::action::Conveyor_Feedback::_blue_boxes_moved_type arg)
+  Init_Conveyor_Feedback_purple_box_moved blue_boxes_moved(::moveit_interfaces::action::Conveyor_Feedback::_blue_boxes_moved_type arg)
   {
     msg_.blue_boxes_moved = std::move(arg);
-    return std::move(msg_);
+    return Init_Conveyor_Feedback_purple_box_moved(msg_);
   }
 
 private:

@@ -334,33 +334,49 @@ class Turtlebot3ManipulationTest(Node):
         feedback_msg.blue_boxes_moved = 0
         self.check_box_done = False
         try:
-            for i in range(goal_handle.request.red_box_count):
-                print(i, feedback_msg.red_boxes_moved)
-                if i == feedback_msg.red_boxes_moved:
-                    self.get_logger().info(f"{i}번째 빨간 박스 운반 중...")
-                    self.move_to_coordinates(110.0, 0.0, 130.0)  # 박스 찾기
-                    self.open_gripper()
-                    print("2초간 쉼")
-                    time.sleep(2)
-                    print('쉼 끝')
-                    self.check_box_position(110.0, 0.0, 130.0,1)  # 비동기 호출
-                    #self.close_gripper()
-                    print(f'redbox_count{self.check_box_done}')
-                    feedback_msg.red_boxes_moved += 1
-                    goal_handle.publish_feedback(feedback_msg)
+            if goal_handle.request.red_box_count != 0:
+                for i in range(goal_handle.request.red_box_count):
+                    print(i, feedback_msg.red_boxes_moved)
+                    if i == feedback_msg.red_boxes_moved:
+                        self.get_logger().info(f"{i}번째 빨간 박스 운반 중...")
+                        self.move_to_coordinates(110.0, 0.0, 130.0)  # 박스 찾기
+                        self.open_gripper()
+                        print("2초간 쉼")
+                        time.sleep(2)
+                        print('쉼 끝')
+                        self.check_box_position(110.0, 0.0, 130.0,1)  # 비동기 호출
+                        #self.close_gripper()
+                        # print(f'redbox_count{self.check_box_done}')
+                        feedback_msg.red_boxes_moved += 1
+                        goal_handle.publish_feedback(feedback_msg)
 
-            for j in range(goal_handle.request.blue_box_count):
-                if j == feedback_msg.blue_boxes_moved and feedback_msg.red_boxes_moved == goal_handle.request.red_box_count:
-                    self.check_box_done = False
-                    self.get_logger().info(f"{i}번째 파란 박스 운반 중...")
-                    self.move_to_coordinates(110.0, 0.0, 130.0)  # 박스 찾기
-                    print("2초간 쉼")
-                    time.sleep(2)
-                    print('쉼 끝')
-                    self.check_box_position(110.0, 0.0, 130.0,2)  # 비동기 호출
-                    #self.close_gripper()
-                    if self.check_box_done == True:
+            if goal_handle.request.blue_box_count != 0:
+                for j in range(goal_handle.request.blue_box_count):
+                    if j == feedback_msg.blue_boxes_moved:
+                        # self.check_box_done = False
+                        self.get_logger().info(f"{j}번째 파란 박스 운반 중...")
+                        self.move_to_coordinates(110.0, 0.0, 130.0)  # 박스 찾기
+                        print("2초간 쉼")
+                        time.sleep(2)
+                        print('쉼 끝')
+                        self.check_box_position(110.0, 0.0, 130.0,2)  # 비동기 호출
+                        #self.close_gripper()
+                        # if self.check_box_done == True:
                         feedback_msg.blue_boxes_moved += 1
+                        goal_handle.publish_feedback(feedback_msg)
+            if goal_handle.request.purple_box_count != 0:
+                for k in range(goal_handle.request.purple_box_count):
+                    if k == feedback_msg.purple_box_moved:
+                        # self.check_box_done = False
+                        self.get_logger().info(f"{k}번째 보라 박스 운반 중...")
+                        self.move_to_coordinates(110.0, 0.0, 130.0)  # 박스 찾기
+                        print("2초간 쉼")
+                        time.sleep(2)
+                        print('쉼 끝')
+                        self.check_box_position(110.0, 0.0, 130.0,0)  # 비동기 호출
+                        #self.close_gripper()
+                        # if self.check_box_done == True:
+                        feedback_msg.purple_box_moved += 1
                         goal_handle.publish_feedback(feedback_msg)
 
             goal_handle.succeed()
@@ -372,7 +388,7 @@ class Turtlebot3ManipulationTest(Node):
         except Exception as e:
             self.get_logger().error(f"Error during execution: {e}")
             goal_handle.abort()
-            result = Conveyor.Result()  
+            result = Conveyor.Result()
             result.success = False
             result.message = str(e)
             return result
@@ -386,9 +402,23 @@ class Turtlebot3ManipulationTest(Node):
             request.z = z
             request.target_color = target_color
             response = self.cli_box.call(request)  # Make synchronous service call
-    
             # Check the response and process it
             if response.is_within_range:
+                if target_color == 0:
+                    self.get_logger().info("보라 박스 위치 확인됨. 하강 후 그리퍼를 닫습니다.")
+                    print(response.goal_x, response.goal_y, response.goal_z)
+                    self.move_to_coordinates(response.goal_x, response.goal_y, response.goal_z - 80)
+                    self.move_to_coordinates(response.goal_x, response.goal_y, response.goal_z - 200)
+                    print("하강 끝")
+                    self.close_gripper()
+                    print("2초간 쉼")
+                    time.sleep(2.0)
+                    print("쉼 끝")
+                    self.move_to_coordinates(response.goal_x, response.goal_y, response.goal_z - 80)
+                    #self.move_to_angles([0.0,0.0,0.0,1.57])  # Optionally reset arm to neutral position
+                    self.get_logger().info("하역장으로 이동")
+                    self.put_down_conveyor()
+
                 self.get_logger().info("박스 위치 확인됨. 하강 후 그리퍼를 닫습니다.")
                 print(response.goal_x, response.goal_y, response.goal_z)
                 self.move_to_coordinates(response.goal_x, response.goal_y, response.goal_z - 80)
@@ -403,7 +433,7 @@ class Turtlebot3ManipulationTest(Node):
                 #self.move_to_angles([0.0,0.0,0.0,1.57])  # Optionally reset arm to neutral position
                 self.get_logger().info("컨베이어 밸트로 이동")
                 self.put_down_conveyor()
-                self.check_box_done = True
+                # self.check_box_done = True
             else:
                 self.get_logger().info("박스 위치를 이동합니다.")
                 self.open_gripper()

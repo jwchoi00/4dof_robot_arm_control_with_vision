@@ -57,14 +57,17 @@ class Conveyor_Goal(metaclass=Metaclass_Conveyor_Goal):
     __slots__ = [
         '_red_box_count',
         '_blue_box_count',
+        '_purple_box_count',
     ]
 
     _fields_and_field_types = {
         'red_box_count': 'int32',
         'blue_box_count': 'int32',
+        'purple_box_count': 'int32',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
@@ -75,6 +78,7 @@ class Conveyor_Goal(metaclass=Metaclass_Conveyor_Goal):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.red_box_count = kwargs.get('red_box_count', int())
         self.blue_box_count = kwargs.get('blue_box_count', int())
+        self.purple_box_count = kwargs.get('purple_box_count', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -108,6 +112,8 @@ class Conveyor_Goal(metaclass=Metaclass_Conveyor_Goal):
         if self.red_box_count != other.red_box_count:
             return False
         if self.blue_box_count != other.blue_box_count:
+            return False
+        if self.purple_box_count != other.purple_box_count:
             return False
         return True
 
@@ -145,6 +151,21 @@ class Conveyor_Goal(metaclass=Metaclass_Conveyor_Goal):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'blue_box_count' field must be an integer in [-2147483648, 2147483647]"
         self._blue_box_count = value
+
+    @builtins.property
+    def purple_box_count(self):
+        """Message field 'purple_box_count'."""
+        return self._purple_box_count
+
+    @purple_box_count.setter
+    def purple_box_count(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'purple_box_count' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'purple_box_count' field must be an integer in [-2147483648, 2147483647]"
+        self._purple_box_count = value
 
 
 # Import statements for member types
@@ -345,14 +366,17 @@ class Conveyor_Feedback(metaclass=Metaclass_Conveyor_Feedback):
     __slots__ = [
         '_red_boxes_moved',
         '_blue_boxes_moved',
+        '_purple_box_moved',
     ]
 
     _fields_and_field_types = {
         'red_boxes_moved': 'int32',
         'blue_boxes_moved': 'int32',
+        'purple_box_moved': 'int32',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
@@ -363,6 +387,7 @@ class Conveyor_Feedback(metaclass=Metaclass_Conveyor_Feedback):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.red_boxes_moved = kwargs.get('red_boxes_moved', int())
         self.blue_boxes_moved = kwargs.get('blue_boxes_moved', int())
+        self.purple_box_moved = kwargs.get('purple_box_moved', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -396,6 +421,8 @@ class Conveyor_Feedback(metaclass=Metaclass_Conveyor_Feedback):
         if self.red_boxes_moved != other.red_boxes_moved:
             return False
         if self.blue_boxes_moved != other.blue_boxes_moved:
+            return False
+        if self.purple_box_moved != other.purple_box_moved:
             return False
         return True
 
@@ -433,6 +460,21 @@ class Conveyor_Feedback(metaclass=Metaclass_Conveyor_Feedback):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'blue_boxes_moved' field must be an integer in [-2147483648, 2147483647]"
         self._blue_boxes_moved = value
+
+    @builtins.property
+    def purple_box_moved(self):
+        """Message field 'purple_box_moved'."""
+        return self._purple_box_moved
+
+    @purple_box_moved.setter
+    def purple_box_moved(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'purple_box_moved' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'purple_box_moved' field must be an integer in [-2147483648, 2147483647]"
+        self._purple_box_moved = value
 
 
 # Import statements for member types

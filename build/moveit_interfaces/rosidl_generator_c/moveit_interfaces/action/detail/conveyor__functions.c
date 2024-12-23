@@ -19,6 +19,7 @@ moveit_interfaces__action__Conveyor_Goal__init(moveit_interfaces__action__Convey
   }
   // red_box_count
   // blue_box_count
+  // purple_box_count
   return true;
 }
 
@@ -30,6 +31,7 @@ moveit_interfaces__action__Conveyor_Goal__fini(moveit_interfaces__action__Convey
   }
   // red_box_count
   // blue_box_count
+  // purple_box_count
 }
 
 bool
@@ -44,6 +46,10 @@ moveit_interfaces__action__Conveyor_Goal__are_equal(const moveit_interfaces__act
   }
   // blue_box_count
   if (lhs->blue_box_count != rhs->blue_box_count) {
+    return false;
+  }
+  // purple_box_count
+  if (lhs->purple_box_count != rhs->purple_box_count) {
     return false;
   }
   return true;
@@ -61,6 +67,8 @@ moveit_interfaces__action__Conveyor_Goal__copy(
   output->red_box_count = input->red_box_count;
   // blue_box_count
   output->blue_box_count = input->blue_box_count;
+  // purple_box_count
+  output->purple_box_count = input->purple_box_count;
   return true;
 }
 
@@ -500,6 +508,7 @@ moveit_interfaces__action__Conveyor_Feedback__init(moveit_interfaces__action__Co
   }
   // red_boxes_moved
   // blue_boxes_moved
+  // purple_box_moved
   return true;
 }
 
@@ -511,6 +520,7 @@ moveit_interfaces__action__Conveyor_Feedback__fini(moveit_interfaces__action__Co
   }
   // red_boxes_moved
   // blue_boxes_moved
+  // purple_box_moved
 }
 
 bool
@@ -525,6 +535,10 @@ moveit_interfaces__action__Conveyor_Feedback__are_equal(const moveit_interfaces_
   }
   // blue_boxes_moved
   if (lhs->blue_boxes_moved != rhs->blue_boxes_moved) {
+    return false;
+  }
+  // purple_box_moved
+  if (lhs->purple_box_moved != rhs->purple_box_moved) {
     return false;
   }
   return true;
@@ -542,6 +556,8 @@ moveit_interfaces__action__Conveyor_Feedback__copy(
   output->red_boxes_moved = input->red_boxes_moved;
   // blue_boxes_moved
   output->blue_boxes_moved = input->blue_boxes_moved;
+  // purple_box_moved
+  output->purple_box_moved = input->purple_box_moved;
   return true;
 }
 

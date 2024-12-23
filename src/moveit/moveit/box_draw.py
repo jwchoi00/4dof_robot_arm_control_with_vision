@@ -28,7 +28,6 @@ class ImageDisplayNode(Node):
         # Camera matrix (K) and distortion coefficients (d)
         self.K = np.array([[1537.87246, 0, 656.024384], [0, 1570.34693, 618.027499], [0, 0, 1]])
         self.d = np.array([0.156609014, -0.487498585, 0.0537193345, 0.00294416872, 3.06628289])
-        
         # Initialize empty list to hold detection data
         self.detections = []
 

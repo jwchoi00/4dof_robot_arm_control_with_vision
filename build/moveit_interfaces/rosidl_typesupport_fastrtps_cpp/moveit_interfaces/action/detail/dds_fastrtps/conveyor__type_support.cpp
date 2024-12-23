@@ -36,6 +36,8 @@ cdr_serialize(
   cdr << ros_message.red_box_count;
   // Member: blue_box_count
   cdr << ros_message.blue_box_count;
+  // Member: purple_box_count
+  cdr << ros_message.purple_box_count;
   return true;
 }
 
@@ -50,6 +52,9 @@ cdr_deserialize(
 
   // Member: blue_box_count
   cdr >> ros_message.blue_box_count;
+
+  // Member: purple_box_count
+  cdr >> ros_message.purple_box_count;
 
   return true;
 }
@@ -76,6 +81,12 @@ get_serialized_size(
   // Member: blue_box_count
   {
     size_t item_size = sizeof(ros_message.blue_box_count);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: purple_box_count
+  {
+    size_t item_size = sizeof(ros_message.purple_box_count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -121,6 +132,15 @@ max_serialized_size_Conveyor_Goal(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: purple_box_count
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -129,7 +149,7 @@ max_serialized_size_Conveyor_Goal(
     using DataType = moveit_interfaces::action::Conveyor_Goal;
     is_plain =
       (
-      offsetof(DataType, blue_box_count) +
+      offsetof(DataType, purple_box_count) +
       last_member_size
       ) == ret_val;
   }
@@ -505,6 +525,8 @@ cdr_serialize(
   cdr << ros_message.red_boxes_moved;
   // Member: blue_boxes_moved
   cdr << ros_message.blue_boxes_moved;
+  // Member: purple_box_moved
+  cdr << ros_message.purple_box_moved;
   return true;
 }
 
@@ -519,6 +541,9 @@ cdr_deserialize(
 
   // Member: blue_boxes_moved
   cdr >> ros_message.blue_boxes_moved;
+
+  // Member: purple_box_moved
+  cdr >> ros_message.purple_box_moved;
 
   return true;
 }
@@ -545,6 +570,12 @@ get_serialized_size(
   // Member: blue_boxes_moved
   {
     size_t item_size = sizeof(ros_message.blue_boxes_moved);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: purple_box_moved
+  {
+    size_t item_size = sizeof(ros_message.purple_box_moved);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -590,6 +621,15 @@ max_serialized_size_Conveyor_Feedback(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: purple_box_moved
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -598,7 +638,7 @@ max_serialized_size_Conveyor_Feedback(
     using DataType = moveit_interfaces::action::Conveyor_Feedback;
     is_plain =
       (
-      offsetof(DataType, blue_boxes_moved) +
+      offsetof(DataType, purple_box_moved) +
       last_member_size
       ) == ret_val;
   }

@@ -26,3 +26,4 @@ camera로 부터 영상을 받고 yolo로 box Detecting을 한 후 좌표를 반
 
 
 
+참고한 git: https://github.com/kimandreas/to_students/tree/main
